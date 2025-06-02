@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Space_Grotesk } from "next/font/google";
+import { Geist, Geist_Mono, Space_Grotesk, Share_Tech_Mono, Russo_One } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -14,6 +14,18 @@ const geistMono = Geist_Mono({
 
 const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
+  subsets: ["latin"],
+});
+
+const shareTechMono = Share_Tech_Mono({
+  variable: "--font-share-tech",
+  weight: "400",
+  subsets: ["latin"],
+});
+
+const russoOne = Russo_One({
+  variable: "--font-russo-one",
+  weight: "400",
   subsets: ["latin"],
 });
 
@@ -33,7 +45,9 @@ export default function RootLayout({
         className={`
           ${geistSans.variable} 
           ${geistMono.variable} 
-          ${spaceGrotesk.variable} 
+          ${spaceGrotesk.variable}
+          ${shareTechMono.variable}
+          ${russoOne.variable}
           antialiased`
           
         }

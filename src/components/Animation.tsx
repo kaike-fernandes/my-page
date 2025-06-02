@@ -17,7 +17,7 @@ export const Animation = ({ children }: AnimationProps) => {
                     className="w-full h-full object-cover"
                 />
             </div>
-            <div className="relative z-10">{children}</div>
+            <div className="relative z-10 min-h-full">{children}</div>
         </div>
     )
 }
