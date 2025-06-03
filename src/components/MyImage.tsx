@@ -3,7 +3,7 @@ import Image from "next/image";
 export const MyImage = () => {
     return (
         <div className="flex-1 flex items-center justify-center">
-            <div className="relative w-120 h-120">
+            <div className="relative w-90 h-90">
                 <Image
                     src="/img/minha-foto.png"
                     alt="Minha foto"
